@@ -7,14 +7,15 @@
     <title>Registration Form</title>
     <style>
         body {
-            background-color: rgb(110, 110, 110);
+            background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?cs=srgb&dl=pexels-pixabay-235985.jpg&fm=jpg");
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             height: 100vh;
             margin: 0;
-            padding:20px;
+            padding: 20px;
+            animation: fadein ease-in 3s;
         }
 
         .form-container {
@@ -75,6 +76,14 @@
         .gender input, .hobbies input {
             margin-right: 5px;
         }
+        @keyframes fadein{
+            from{
+                opacity:0;
+            }
+            to{
+                opacity:1;
+            }
+        }
     </style>
 </head>
 
@@ -128,4 +137,3 @@
 </body>
 
 </html>
-
