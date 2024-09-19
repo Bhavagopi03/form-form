@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <style>
-        body {
-            background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?cs=srgb&dl=pexels-pixabay-235985.jpg&fm=jpg");
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            height: 100vh;
-            margin: 0;
-            padding: 20px;
-            animation: fadein ease-in 3s;
-            background-size: cover; 
-            background-position: center; 
+      body {
+    background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?cs=srgb&dl=pexels-pixabay-235985.jpg&fm=jpg");
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    animation: fadein ease-in 3s;
+    background-size: cover; 
+    background-position: center; 
 }
 
 
@@ -25,8 +25,8 @@
     body {
         background-image: url("https://img.freepik.com/free-photo/brown-concrete-wall-with-scratches-vector_53876-143109.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726617600&semt=ais_hybrid");
     }
-    .cont{
-        width:90%;
+    .form-container {
+        width: 90%;
     }
 }
 
@@ -34,85 +34,93 @@
     body {
         background-image: url("https://wallpapers.com/images/hd/dark-brown-background-1920-x-1200-k56c55z0r1wqm7i6.jpg");
     }
-    .cont{
-        width:70%;
+    .form-container {
+        width: 70%;
     }
 }
-@media only screen and (min-width: 992px) {
+
+@media only screen and (min-width: 769px) {
     body {
         background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?cs=srgb&dl=pexels-pixabay-235985.jpg&fm=jpg");
     }
-    .cont{
-        width:400px;
+    .form-container {
+        width: 400px;
     }
 }
 
-        .form-container {
-            background-color: powderblue;
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
 
-        h1 {
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+.form-container {
+    background-color: powderblue;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; 
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
 
-        label {
-            font-weight: bold;
-            margin-bottom: 5px;
-            display: block;
-        }
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="date"],
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: 1px solid rgb(26, 24, 24);
-            box-sizing: border-box;
-        }
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
 
-        input[type="submit"],
-        input[type="reset"] {
-            width: 100%;
-            padding: 10px;
-            background-color: coral;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(26, 24, 24);
+    box-sizing: border-box;
+}
 
-        input[type="submit"]:hover,
-        input[type="reset"]:hover {
-            background-color: azure;
-            color: darkcyan;
-        }
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
-        .gender, .hobbies {
-            margin-bottom: 15px;
-        }
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: azure;
+    color: darkcyan;
+}
 
-        .gender input, .hobbies input {
-            margin-right: 5px;
-        }
-        @keyframes fadein{
-            from{
-                opacity:0;
-            }
-            to{
-                opacity:1;
-            }
-        }
+.gender,
+.hobbies {
+    margin-bottom: 15px;
+}
+
+.gender input,
+.hobbies input {
+    margin-right: 5px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
     </style>
 </head>
 
