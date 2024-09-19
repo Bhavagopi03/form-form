@@ -5,123 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <style>
-      body {
-    background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?cs=srgb&dl=pexels-pixabay-235985.jpg&fm=jpg");
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
-    margin: 0;
-    padding: 20px;
-    animation: fadein ease-in 3s;
-    background-size: cover; 
-    background-position: center; 
-}
-
-
-@media only screen and (max-width: 600px) {
-    body {
-        background-image: url("https://img.freepik.com/free-photo/brown-concrete-wall-with-scratches-vector_53876-143109.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726617600&semt=ais_hybrid");
-    }
-    .form-container {
-        width: 90%;
-    }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-    body {
-        background-image: url("https://wallpapers.com/images/hd/dark-brown-background-1920-x-1200-k56c55z0r1wqm7i6.jpg");
-    }
-    .form-container {
-        width: 70%;
-    }
-}
-
-@media only screen and (min-width: 769px) {
-    body {
-        background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?cs=srgb&dl=pexels-pixabay-235985.jpg&fm=jpg");
-    }
-    .form-container {
-        width: 400px;
-    }
-}
-
-
-.form-container {
-    background-color: powderblue;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%; 
-    max-width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-}
-
-h1 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid rgb(26, 24, 24);
-    box-sizing: border-box;
-}
-
-input[type="submit"],
-input[type="reset"] {
-    width: 100%;
-    padding: 10px;
-    background-color: coral;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-    background-color: azure;
-    color: darkcyan;
-}
-
-.gender,
-.hobbies {
-    margin-bottom: 15px;
-}
-
-.gender input,
-.hobbies input {
-    margin-right: 5px;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-    </style>
+   
 </head>
 
 <body>
@@ -129,19 +13,22 @@ input[type="reset"]:hover {
         <h1>Registration Form</h1>
         <form method="post">
             <label for="fname">First name:</label>
-            <input type="text" id="fname" required>
+            <input type="text" id="fname" placeholder="First Name" required>
 
             <label for="lname">Last name:</label>
-            <input type="text" id="lname" required>
+            <input type="text" id="lname"  placeholder="Last Name" required>
 
             <label for="nname">Nick name:</label>
-            <input type="text" id="nname" required>
+            <input type="text" id="nname" placeholder="Nick Name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <label for="lname">Create  Username:</label>
+            <input type="text" id="uname"  placeholder="Username" required>
 
             <label for="password">Password:</label>
-            <input type="password" id="password" required>
+            <input type="password" id="password" placeholder="Password" required>
 
             <label for="dob">Date of Birth:</label>
             <input type="date" id="dob" required>
@@ -154,7 +41,7 @@ input[type="reset"]:hover {
             </div>
 
             <label for="mobile">Mobile:</label>
-            <input type="text" id="mobile" required>
+            <input type="text" id="mobile" required placeholder="Mobile">
 
             <div class="hobbies">
                 <label>Hobbies:</label>
@@ -169,8 +56,10 @@ input[type="reset"]:hover {
 
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
+            <p> Got an accoount? Then <a href="login.html">Log-in!</a></p>
         </form>
     </div>
+   
 </body>
 
 </html>
