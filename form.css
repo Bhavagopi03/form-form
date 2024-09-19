@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+body {
+    background-image: url("https://i.pinimg.com/originals/4b/7d/0a/4b7d0ad9deeeb8fad8f43b12425f6cb9.png");
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    animation: fadein ease-in 3s;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("https://i.pinimg.com/736x/11/01/05/110105aead697e6107f0960bfce1b3e9.jpg");
+    }
+    .form-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJkdY8Z288OooaWWJ3rS08S-oREV-07I3MOrWKkANzIwU5bVsuFKfcP3WCEF8szR8daDQ&usqp=CAU");
+    }
+    .form-container {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        background-image: url("https://i.pinimg.com/originals/4b/7d/0a/4b7d0ad9deeeb8fad8f43b12425f6cb9.png");
+    }
+    .form-container {
+        width: 300px;
+    }
+}
+
+
+.form-container {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; 
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+.form-container:hover{
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(26, 24, 24);
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(40, 18, 10, 0.5);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border: solid;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: rgba(61, 40, 16, 0.5);
+    color: rgba(251, 233, 221, 0.7);
+    transform: scale(1.0);
+}
+a {
+    color: rgb(73, 37, 6);
+}
+
+a:hover {
+    color: rgb(71, 28, 2);
+}
+.gender,
+.hobbies {
+    margin-bottom: 15px;
+}
+
+.gender input,
+.hobbies input {
+    margin-right: 5px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
